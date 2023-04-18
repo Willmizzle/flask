@@ -7,8 +7,9 @@ app = Flask(__name__)
 # Define a route for the root URL ("/") and associate it with a function, `hello_world`
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, World!!!'
 
 # Check if the executed file is the main program and run the app
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', debug=True)
+    print('hi')
